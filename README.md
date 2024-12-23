@@ -1,0 +1,2 @@
+# Rating.spek
+Rating menu

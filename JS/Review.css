@@ -8,39 +8,7 @@ body {
     height: 100vh;
     margin: 0;
   }
-  /* styling the logo start */
-  .logo {
-    position: absolute;
-    bottom: 90%;
-    right: 90%;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(33, 150, 243, 0.8), 
-                 0 0 20px rgba(33, 150, 243, 0.5), 
-                 0 0 30px rgba(33, 150, 243, 0.3);
-    background: linear-gradient(90deg, #4caf50, #2196f3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: glow 2s infinite alternate ease-in-out;
-  }
-
-  @keyframes glow {
-    0% {
-      text-shadow: 0 0 10px rgba(33, 150, 243, 0.8), 
-                   0 0 20px rgba(33, 150, 243, 0.5), 
-                   0 0 30px rgba(33, 150, 243, 0.3);
-    }
-    100% {
-      text-shadow: 0 0 15px rgba(33, 150, 243, 1), 
-                   0 0 30px rgba(33, 150, 243, 0.8), 
-                   0 0 45px rgba(33, 150, 243, 0.6);
-    }
-  }
-    /* styling the logo end */
-
+ 
   /* styling the whole container start */
   .rating-container {
     text-align: center;
@@ -60,6 +28,9 @@ body {
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
+  }
+  .name{
+    font-size: 10px;
   }
    /* styling user information end */
 
@@ -179,23 +150,7 @@ body {
         background-color: #1e1e1e;
         border-radius: 5px;
       }
-      .logo {
-        position: absolute;
-        bottom: 90%;
-        right: 80%;
-        font-family: Arial, sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-        color: #ffffff;
-        text-transform: uppercase;
-        text-shadow: 0 0 10px rgba(33, 150, 243, 0.8), 
-                     0 0 20px rgba(33, 150, 243, 0.5), 
-                     0 0 30px rgba(33, 150, 243, 0.3);
-        background: linear-gradient(90deg, #4caf50, #2196f3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: glow 2s infinite alternate ease-in-out;
-      }
+      
   }
   /* small screen */
   @media screen  and (min-width :576px) and (max-width:767px){
@@ -218,23 +173,7 @@ body {
         color: #666;
         transition: transform 0.2s, color 0.2s;
       }
-      .logo {
-        position: absolute;
-        bottom: 90%;
-        right: 70%;
-        font-family: Arial, sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-        color: #ffffff;
-        text-transform: uppercase;
-        text-shadow: 0 0 10px rgba(33, 150, 243, 0.8), 
-                     0 0 20px rgba(33, 150, 243, 0.5), 
-                     0 0 30px rgba(33, 150, 243, 0.3);
-        background: linear-gradient(90deg, #4caf50, #2196f3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: glow 2s infinite alternate ease-in-out;
-      }
+     
   }
   /* x-small screen */
   @media(max-width:575px){
@@ -258,24 +197,7 @@ body {
         color: #666;
         transition: transform 0.2s, color 0.2s;
       }
-      .logo {
-        position: absolute;
-        bottom: 82%;
-        right: 70%;
-        position: fixed;
-        font-family: Arial, sans-serif;
-        font-size: 13px;
-        font-weight: bold;
-        color: #ffffff;
-        text-transform: uppercase;
-        text-shadow: 0 0 10px rgba(33, 150, 243, 0.8), 
-                     0 0 20px rgba(33, 150, 243, 0.5), 
-                     0 0 30px rgba(33, 150, 243, 0.3);
-        background: linear-gradient(90deg, #4caf50, #2196f3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: glow 2s infinite alternate ease-in-out;
-      }
+     
       .rating-message {
         font-size: 7px;
         margin-bottom: 20px;

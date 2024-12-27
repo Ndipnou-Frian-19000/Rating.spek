@@ -260,8 +260,8 @@ body {
       }
       .logo {
         position: absolute;
-        bottom: 90%;
-        right: 80%;
+        bottom: 82%;
+        right: 70%;
         font-family: Arial, sans-serif;
         font-size: 13px;
         font-weight: bold;
@@ -276,8 +276,10 @@ body {
         animation: glow 2s infinite alternate ease-in-out;
       }
       .rating-message {
-        font-size: 14px;
+        font-size: 7px;
         margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
         color: #b3b3b3;
       }
   }

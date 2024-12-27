@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  /* styling the logo start */
+  .logo {
+    position: absolute;
+    bottom: 90%;
+    right: 90%;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(33, 150, 243, 0.8), 
+                 0 0 20px rgba(33, 150, 243, 0.5), 
+                 0 0 30px rgba(33, 150, 243, 0.3);
+    background: linear-gradient(90deg, #4caf50, #2196f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 2s infinite alternate ease-in-out;
+  }
+
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 10px rgba(33, 150, 243, 0.8), 
+                   0 0 20px rgba(33, 150, 243, 0.5), 
+                   0 0 30px rgba(33, 150, 243, 0.3);
+    }
+    100% {
+      text-shadow: 0 0 15px rgba(33, 150, 243, 1), 
+                   0 0 30px rgba(33, 150, 243, 0.8), 
+                   0 0 45px rgba(33, 150, 243, 0.6);
+    }
+  }
+    /* styling the logo end */
+
+  /* styling the whole container start */
+  .rating-container {
+    text-align: center;
+    max-width: 700px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+  }
+   /* styling the whole container ends */
+
+  /* styling user information start */
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+   /* styling user information end */
+
+   /* styling user img */
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+   /* styling user img */
+  
+   /* styling the rating message */
+  .rating-message {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+  }
+   /* styling the rating message */
+  
+   /* styling the star div */
+  .stars {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  /* styling the star div */
+
+  /* styling individual stars start  */
+  .star {
+    font-size: 60px;
+    cursor: pointer;
+    color: #666;
+    transition: transform 0.2s, color 0.2s;
+  }
+  
+  .star:hover,
+  .star.selected {
+    color: lightskyblue;
+    transform: scale(1.2);
+  }
+  /* styling individual stars end */
+  
+  /* styling the text area start */
+  .feedback {
+    width: 80%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #fff;
+    resize: none;
+  }
+  
+  .feedback:focus {
+    outline: 2px solid lightskyblue;
+  }
+  .feedback::placeholder{
+    text-align: center;
+  }
+   /* styling the text area ends */
+  
+   /* styling the Button start */
+  .submit-btn {
+    background-color:  #2a2a2a;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color:  lightskyblue;
+  }
+  /* styling the Button end */
+  
+  /* styling conformation message */
+  .confirmation-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #4caf50;
+  }
+  /* styling conformation message */
+
+  /* Responsiveness */
+
+/* large screen */
+@media(min-width:992px){
+    
+    .rating-container {
+        text-align: center;
+        max-width: 700px;
+        padding-bottom: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        padding-left: 40px;
+        background-color: #1e1e1e;
+        border-radius: 5px;
+      }
+  }
+  /* medium screen */
+  @media screen and (min-width :768px) and (max-width:991px){
+    .rating-container {
+        text-align: center;
+        max-width: 700px;
+        padding-bottom: 40px;
+        padding-right: 20px;
+        padding-top: 40px;
+        padding-left: 20px;
+        background-color: #1e1e1e;
+        border-radius: 5px;
+      }
+      .logo {
+        position: absolute;
+        bottom: 90%;
+        right: 80%;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px rgba(33, 150, 243, 0.8), 
+                     0 0 20px rgba(33, 150, 243, 0.5), 
+                     0 0 30px rgba(33, 150, 243, 0.3);
+        background: linear-gradient(90deg, #4caf50, #2196f3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glow 2s infinite alternate ease-in-out;
+      }
+  }
+  /* small screen */
+  @media screen  and (min-width :576px) and (max-width:767px){
+    .rating-container {
+        text-align: center;
+        max-width: 500px;
+        padding-bottom: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        padding-left: 40px;
+        background-color: #1e1e1e;
+        border-radius: 5px;
+      }
+      .feedback::placeholder{
+        text-align: center;
+      }
+      .star {
+        font-size: 40px;
+        cursor: pointer;
+        color: #666;
+        transition: transform 0.2s, color 0.2s;
+      }
+      .logo {
+        position: absolute;
+        bottom: 90%;
+        right: 70%;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px rgba(33, 150, 243, 0.8), 
+                     0 0 20px rgba(33, 150, 243, 0.5), 
+                     0 0 30px rgba(33, 150, 243, 0.3);
+        background: linear-gradient(90deg, #4caf50, #2196f3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glow 2s infinite alternate ease-in-out;
+      }
+  }
+  /* x-small screen */
+  @media(max-width:575px){
+
+    .rating-container {
+        text-align: center;
+        max-width: 400px;
+        padding-bottom: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        padding-left: 40px;
+        background-color: #1e1e1e;
+        border-radius: 5px;
+      }
+      .feedback::placeholder{
+        text-align: center;
+      }
+      .star {
+        font-size: 40px;
+        cursor: pointer;
+        color: #666;
+        transition: transform 0.2s, color 0.2s;
+      }
+      .logo {
+        position: absolute;
+        bottom: 90%;
+        right: 80%;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px rgba(33, 150, 243, 0.8), 
+                     0 0 20px rgba(33, 150, 243, 0.5), 
+                     0 0 30px rgba(33, 150, 243, 0.3);
+        background: linear-gradient(90deg, #4caf50, #2196f3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glow 2s infinite alternate ease-in-out;
+      }
+      .rating-message {
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #b3b3b3;
+      }
+  }
+  

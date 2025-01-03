@@ -142,18 +142,18 @@ body {
   }
   
   .reviews {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   .review {
-    background-color: #1e1e1e;
+    background-color: #121212;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 15px;
   }
-  .review:hover{
-    transform: translateY(-10px);
-    transition: all ease o.3s;
+  h4{
+    font-size: 14px;
+    color: #b3b3b3;
   }
   
   .review-header {
@@ -169,7 +169,8 @@ body {
   }
   
   .review-text {
-    margin: 10px 0;
+    font-size: 14px;
+    color: #b3b3b3;
   }
   
   .helpful {
@@ -214,6 +215,11 @@ body {
     max-width: 600px;
     margin: 0 auto;
   }
+  .review-header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
 }
 /* small screen */
 @media screen  and (min-width :576px) and (max-width:767px){
@@ -235,6 +241,11 @@ body {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: glow 2s infinite alternate ease-in-out;
+    }
+    .review-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
     }
 }
 /* x-small screen */
@@ -278,6 +289,11 @@ body {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: glow 2s infinite alternate ease-in-out;
+    }
+    .review-header img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
     }
 }
   
